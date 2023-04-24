@@ -1,0 +1,56 @@
+#Overview of midjourney parameters and how to use them
+
+Midjourney Basics:
+
+  /remix to enable modifications when creating variants
+  /fast to enable fast mode (15 hour/mo cap) and /relax to turn off
+
+  Basic Prompt format: [Image reference 1...] [Description of image] --[Parameters]
+
+    Example: https://www.lego.com/cdn/cs/set/assets/blt7e3873b9518a48ef/5005528.png LEGO minifigure head --quality 1
+
+      NOTE: Reference images must come first, followed by description, followed by parameters; all objects separated by a space (" ")
+      NOTE: Images must be direct links (i.e., .jpg, .png)
+      
+      
+
+What can you change besides the description and reference images?
+
+  (1) Style
+
+     Style depends on the model version (v5, v4, or earlier) -- default current model v4 has (3) options: #personal descriptions below
+
+      4a) Watercolor / painting
+      4b) Cartoon / 2D animation
+      4c) Photo-realistic (ish)
+
+     Style value by default is 100, with a range of 0 - 1,000; the more stylized, the more it will attempt the image in the style you referenced. To set,
+     append --stylize [###] to your prompt or --stylize [high, medium or low]
+
+     Example: --stylize 350 or --stylize high
+
+  (2) Seed
+  
+     Seed is the random starting point of the image (value 1 - 4294967295); change to get a different image set, keep the same to create similar
+     
+     Example: --seed 123145
+     
+  (3) Chaos & Quality
+  
+      Chaos refers to how varied the initial image set will be, while quality refers to the image output resolution
+      
+      Accepted values -- chaos: 0 - 100; quality: 0.25, 0.5, 0.75, 1
+      
+      Example: --chaos 250 or --quality 1
+
+
+
+Tips for writing good prompts:
+
+  Advanced prompts provide both reference images and textual descriptions of the image and the desired image style. 
+  
+    Example: https://www.lego.com/cdn/cs/set/assets/blt7e3873b9518a48ef/5005528.png https://m.media-amazon.com/images/I/81ltVFN0bSL._AC_UF894,1000_QL80_.jpg 
+    LEGO minifigures photorealistic style --style 4c --stylize 350 --seed 123145 --chaos 25 --quality 0.75
+
+      
+      
