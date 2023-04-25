@@ -2,6 +2,15 @@
 
 Midjourney Basics:
 
+Common parameters:
+
+--version 5 --quality 1 --chaos 15 --s 350
+
+
+
+
+
+
   /remix to enable modifications when creating variants
   
   ## Notes on remixing: 
