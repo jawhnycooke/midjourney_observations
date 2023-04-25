@@ -27,7 +27,7 @@ What can you change besides the description and reference images?
      Style value by default is 100, with a range of 0 - 1,000; the more stylized, the more it will attempt the image in the style you referenced. To set,
      append --stylize [###] to your prompt or --stylize [high, medium or low]
 
-     Example: --stylize 350 or --stylize high
+     Example: --s 350 or --s high
 
   (2) Seed
   
@@ -51,6 +51,12 @@ Tips for writing good prompts:
   
     Example: https://www.lego.com/cdn/cs/set/assets/blt7e3873b9518a48ef/5005528.png https://m.media-amazon.com/images/I/81ltVFN0bSL._AC_UF894,1000_QL80_.jpg 
     LEGO minifigures photorealistic style --style 4c --stylize 350 --seed 123145 --chaos 25 --quality 0.75
+    
+   Text prompts:
+   
+    In addition to specifying a single artist (i.e., "in the style of davinci"), you can also specify image or painting characteristics, such as:
+    
+      A castle in the style of Dave Filoni's Clone Wars with volumetric lighting
 
       
       
