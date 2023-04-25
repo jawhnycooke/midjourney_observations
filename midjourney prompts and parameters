@@ -1,17 +1,16 @@
 #Overview of midjourney parameters and how to use them
 
-Midjourney Basics:
+Midjourney Basics
 
-Common parameters:
+-------------------------------------
 
---version 5 --quality 1 --chaos 15 --s 350
+Common parameters to append to every prompt:
 
+--version 5 --quality 1 --chaos 15
 
+--------------------------------------
 
-
-
-
-  /remix to enable modifications when creating variants
+Before you begin: turn on /remix to enable changes when creating new variant
   
   ## Notes on remixing: 
   
@@ -23,6 +22,8 @@ Common parameters:
    #  Chaos can only be specified during the initial input and will influence all subsequent generations
   
   /fast to enable fast mode (15 hour/mo cap) and /relax to turn off
+  
+----------------------------------------
 
   Basic Prompt format: [Image reference 1...] [Description of image] --[Parameters]
 
