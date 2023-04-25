@@ -1,0 +1,33 @@
+  Test Log 04/24/2023
+  
+    Test A0000175
+    
+            [Ref Images]
+
+            https://images.cnbctv18.com/wp-content/uploads/2022/04/Satellite-1000x573.jpg https://media.cnn.com/api/v1/images/stellar/prod/221214170646-04-
+            nasa-swot-mission-swot-illo.jpg https://www.ucsusa.org/sites/default/files/styles/original/public/images/gw-nasa-earth-science-mission-
+            satellite.jpg https://scx2.b-cdn.net/gfx/news/2021/satellite-2.jpg https://images.theconversation.com/files/383032/original/file-20210208-21-
+            1ucbyp7.jpg https://starwalk.space/gallery/images/satellites-quiz-intro/1136x639.jpg https://assets.rbl.ms/27190826/origin.jpg 
+
+            [Text Description]
+
+            Telecommunications satellite orbiting the Earth in photorealistic fashion 
+
+            [Parameters]
+
+            --v 5 —seed 456784 --chaos 100 --quality 0.75 --s 1000
+
+            [Result]
+
+            Version 1 selected after one attempt: https://shorturl.at/knBIM alternate version using --iw 0.9 found here: https://shorturl.at/przWZ
+
+            [Observations]
+
+            Input images featured cylindrical satellites, but did not imagine to that degree. Also would have thought changing the image weight would have 
+            helped that, but resulting satellite appears quite similar. 
+ 
+   
+
+    
+ 
+    
