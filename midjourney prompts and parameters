@@ -11,9 +11,10 @@ Midjourney Basics:
 
       NOTE: Reference images must come first, followed by description, followed by parameters; all objects separated by a space (" ")
       NOTE: Images must be direct links (i.e., .jpg, .png)
+      NOTE: You can weight the prompt to more heavily favor the reference images vs. the text by adding --iw 0.5 (0.25 by default, increase to favor img)
+      NOTE: A max of 10 reference images can be specified.
       
       
-
 What can you change besides the description and reference images?
 
   (1) Style
