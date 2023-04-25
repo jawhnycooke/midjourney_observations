@@ -10,7 +10,7 @@ Midjourney Basics:
     Example: https://www.lego.com/cdn/cs/set/assets/blt7e3873b9518a48ef/5005528.png LEGO minifigure head --quality 1
 
       NOTE: Reference images must come first, followed by description, followed by parameters; all objects separated by a space (" ")
-      NOTE: Images must be direct links (i.e., .jpg, .png)
+      NOTE: Images must be direct links (i.e., .jpg, .png); works best if you directly upload to Discord and use discord app URL
       NOTE: You can weight the prompt to more heavily favor the reference images vs. the text by adding --iw 0.5 (0.25 by default, increase to favor img)
       NOTE: A max of 10 reference images can be specified.
       
