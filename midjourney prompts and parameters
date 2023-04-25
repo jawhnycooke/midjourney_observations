@@ -3,6 +3,15 @@
 Midjourney Basics:
 
   /remix to enable modifications when creating variants
+  
+  ## Notes on remixing: 
+  
+     Always use version 3 or 5 when remixing to enable image weighting
+     You must re-specify the version when remixing
+     Set image weight to 0.8 or above to preserve overall layout
+     Note that updated prompt should include key elements specified the first time >> elements will not be preserved
+      i.e., if you say "castle on a hill", then "dragons in the distance", it will override the castle with dragons even with high i
+  
   /fast to enable fast mode (15 hour/mo cap) and /relax to turn off
 
   Basic Prompt format: [Image reference 1...] [Description of image] --[Parameters]
@@ -13,7 +22,9 @@ Midjourney Basics:
       NOTE: Images must be direct links (i.e., .jpg, .png); works best if you directly upload to Discord and use discord app URL
       NOTE: You can weight the prompt to more heavily favor the reference images vs. the text by adding --iw 0.5 (0.25 by default, increase to favor img)
       NOTE: A max of 10 reference images can be specified.
-      
+
+VERSION 5 >> enables image weights; this must be specified again when remixing
+
       
 What can you change besides the description and reference images?
 
