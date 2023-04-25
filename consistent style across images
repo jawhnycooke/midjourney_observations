@@ -1,8 +1,44 @@
-Facts:
+RELEVANT BACKGROUND:
 
-    You can specify up to 10 images as references
-    You can specify up to 4000 characters of text descriptions
-    
+    User can specify up to 10 images as references
+    User can specify up to 4000 characters of text descriptions
+    User can modify the following parameters: (1) chaos, (2) version, (3) style, (4) seed
 
-What is the most effective way to ensure a consistent theme across prompts?
+-------------------------------------------------------------------------------------------------
+
+CORE QUESTION: What is the most effective way to ensure a consistent style across images from multiple prompts?
+
+    This discussion explores how a user can prompt Midjourney to create a series of images all within the same
+    consistent, custom, AI-style; it is not concerned with pre-existing art styles that can easily be specified by
+    including "in photorealistic style..." terms in the text.
+
+
+--------------------------------------------------------------------------------------------------
+
+UNDERSTANDING THE MODEL DYNAMICS:
+
+Midjourney, Dall-e-2, etc. all use a series of image-text pairs, mostly derived from the LAION datasets. When you specify
+a prompt for the model, it will go back through all of its image-text pair references and favor those images that contain
+your specific keywords. 
+
+The image reference feature works by providing heavier weighting to the specific images referenced, in combination with
+your supplied text references. The model then aggregates features identified from your image references with features
+found in the images associated with your text prompt to create a final composite image meeting your request. 
+
+NOTE: you can control how much emphasis is given to your reference images vs. the text prompt using the --iw parameter.
+
+----------------------------------------------------------------------------------------------------
+
+IMPLICATIONS:
+
+About the image weighting parameter...
+
+    There are hundreds of millions of image-text pairs in the LAION datasets, with hundreds of thousands to millions
+    potentially matching your prompt. In contrast, you can only specify 10 reference images. As such, even when using
+    a very small --iw, your reference images will significantly outweight any individual image matching the text
+    prompt. 
+
+About creating a consistent style across images...
+
+
 
