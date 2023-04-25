@@ -6,11 +6,12 @@ Midjourney Basics:
   
   ## Notes on remixing: 
   
-     Always use version 3 or 5 when remixing to enable image weighting
-     You must re-specify the version when remixing
-     Set image weight to 0.8 or above to preserve overall layout
-     Note that updated prompt should include key elements specified the first time >> elements will not be preserved
-      i.e., if you say "castle on a hill", then "dragons in the distance", it will override the castle with dragons even with high i
+   #  Always use version 3 or 5 when remixing to enable image weighting
+   #  You must re-specify the version when remixing
+   #  Set image weight to 0.8 or above to preserve overall layout
+   #  Note that updated prompt should include key elements specified the first time >> elements will not be preserved; i.e., if you say "castle on a 
+      hill", then "dragons in the distance", it will override the castle with dragons even with high image weight
+   #  Chaos can only be specified during the initial input and will influence all subsequent generations
   
   /fast to enable fast mode (15 hour/mo cap) and /relax to turn off
 
@@ -44,16 +45,20 @@ What can you change besides the description and reference images?
   (2) Seed
   
      Seed is the random starting point of the image (value 1 - 4294967295); change to get a different image set, keep the same to create similar
+     # You can use this to go back -- if you like an image from an earlier set, leave the seed the same and change certain parameters or prompts to
+     # generate similar images to the one you liked
      
      Example: --seed 123145
      
   (3) Chaos & Quality
   
       Chaos refers to how varied the initial image set will be, while quality refers to the image output resolution
+      # Chaos of 100 will result in wildly varying images, some looking like bad n64 games, others looking like watercolor images; default value is zero
+      # Observable difference with chaos values above 25 is minimal; suggest setting to 10 - 20 for variability in initial image set
       
       Accepted values -- chaos: 0 - 100; quality: 0.25, 0.5, 0.75, 1
       
-      Example: --chaos 250 or --quality 1
+      Example: --chaos 25 or --quality 1
 
 
 
