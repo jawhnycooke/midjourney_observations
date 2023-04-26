@@ -60,4 +60,3 @@ IMPLICATIONS FOR WRITING GOOD PROMPTS:
       examples of potential terms can be found in the /consistent style directory. Further analysis of text-pairs is needed to understand
       which of these terms have sufficiently large reference datasets to have a meaningful impact on the model's output.
       
----------------------------------------------------------------------------------------------------
