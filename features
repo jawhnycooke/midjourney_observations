@@ -47,3 +47,17 @@ SUMMARY FEATURES:
   
   15) Mood or Tone - ??
 
+--------------------------------------------------------------------------------------------------
+
+IMPLICATIONS FOR WRITING GOOD PROMPTS:
+
+  >> Each of these features can be directly specified in the prompt itself
+  
+      Example: Depth & Perspective - "a man standing in front of a building shown from the perspective of a very small creature on the ground 
+      with more buildings far in the distance" 
+      
+  >> Creating a "style basket" of terms to include in all of your prompts can enable the creation of a consistent theme across multiple images;
+      examples of potential terms can be found in the /consistent style directory. Further analysis of text-pairs is needed to understand
+      which of these terms have sufficiently large reference datasets to have a meaningful impact on the model's output.
+      
+---------------------------------------------------------------------------------------------------
