@@ -1,0 +1,47 @@
+RELEVANT BACKGROUND:
+
+  Diffusion models don't work by copying images directly - rather, they identify features of the image associated
+  with the selected class label. These features can be explicit, such as a word or watermark, or they can be very 
+  subtle, such as a repetition of the texture pattern. Understanding what types of features the Midjourney backend
+  is evaluating can help you select better reference images and design better prompts.
+
+-------------------------------------------------------------------------------------------------
+
+CORE QUESTION: What features does the Midjourney algorithm evaluate when you provide reference images?
+
+--------------------------------------------------------------------------------------------------
+
+SUMMARY FEATURES:
+
+  1) Color - color scheme of the reference image, including overall palette, relative brightness or darkness of
+  different colors, and any patterns or textures in the image
+  
+  2) Shapes and Structure - size, proportions, and orientations of different objects, as well as any patterns or
+  symetries
+  
+  3) Texture - smooth, rough, shiny, or matte textures
+  
+  4) Lighting and Shadow - direction and intensity of light, the way that shadows are cast by different objects
+  
+  5) Objects - objects, particularly any included in the 1000 class labels featured in LAION-400
+  
+  6) Spatial Relationships - arrangement or pattern of objects in the image
+  
+  7) Semantic Features - ??
+  
+  8) Artistic Style - brushstrokes, composition, visual effects
+  
+  9) Pose and Orientation - how objects are positioned
+  
+  10) Emotion and Mood - ??
+  
+  11) Depth and Perspective - distance between objects in the image and the overall sense of depth and dimensionality
+  
+  12) Contextual information - objects similar to those displayed
+  
+  13) Surface Material or Finishes - beyond just texture, specific object surfaces
+  
+  14) Artistic Composition - balance, symmetry, harmony of elements
+  
+  15) Mood or Tone - ??
+
