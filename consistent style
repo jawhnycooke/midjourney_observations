@@ -28,9 +28,8 @@ IMPLICATIONS:
 
 About the image weighting parameter...
 
-    There are hundreds of millions of image-text pairs in the LAION datasets, with hundreds of thousands to millions
-    potentially matching your prompt. In contrast, you can only specify 10 reference images. As such, even when using
-    a very small --iw, your reference images will significantly outweight any individual image matching the text
+    There are many image-text pairs in the LAION datasets potentially matching your prompt. In contrast, you can only specify 10 reference images. 
+    As such, even when using a very small --iw, your reference images will significantly outweight any individual image matching the text
     prompt. 
 
 About creating a consistent style across images...
