@@ -45,6 +45,22 @@ Two leading theories on how to manually create attention mechanisms based on you
 
 Investigating if this is in any way accurate...
 
+[UPDATE]
+
+Initial test results indicate word count does not impact the image. See test:
+
+        Prompt #1: canopy:: deep in a forest there is a broken down cart in the foreground and in the background there is a small cozy looking village:: 
+        looking for group comic dungeons and dragons fantasy theme with intricate details warm color palette --version 5 --quality 1 --chaos 1 
+        --seed 145425 
+        
+        Output: https://shorturl.at/jkCDT
+        
+        Prompt #2: canopy:: canopy:: canopy:: canopy:: canopy:: canopy:: canopy:: canopy:: canopy:: deep in a forest there is a broken down cart in the 
+        foreground and in the background there is a small cozy looking village:: looking for group comic dungeons and dragons fantasy theme with 
+        intricate details warm color palette --version 5 --quality 1 --chaos 1 --seed 145425
+        
+        Output: https://shorturl.at/APT36
+
 --------------------------------------------------------------------------------------------------
 
 IMPLICATIONS FOR WRITING GOOD PROMPTS:
