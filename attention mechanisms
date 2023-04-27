@@ -1,0 +1,50 @@
+RELEVANT BACKGROUND:
+
+When you input a query to Midjourney, it goes through a Transformer which matches that query to a series of word 'embeddings' developed from WordNet;
+this turns your query into a vector (i.e., a sequence of numbers, think like DNA). As the neural net updates across layers trying to identify features,
+attention mechanisms help it to identify key pieces of that sequence that are good at predicting the class label. See https://arxiv.org/pdf/1706.03762.pdf
+
+    For example, if the class label is "McDonalds", the portion of the image that contains the classic golden arches is going to stand out in that
+    DNA strand of all images.
+
+While your query is not directly specifying a class label for the model to condition on, it does provide a type of numberical input that guides the
+shaping of the reference group. 
+
+Breaking it down:
+
+    (1) Your query gets broken down into piece parts called tokens
+    (2) Tokens are mapped to WordNet (always WordNet)
+       
+       >>It's not really a taxonomy...  think more like cluster groupings, though its more contextually routed than that. Lots of manual mapping of
+          word types, meanings, similarties
+
+    (3) WordNet embeddings are mapped to images based on LAION (https://laion.ai/blog/laion-5b/)
+    (4) Diffusion model process
+
+        >>Will have to push separate post, but in this case you basically start with a field of noise (that's why your initial image is just a blob),
+          then it updates the image based on the reference images selected from query (Reference Group comes from your WordNet embeddings comes from
+          your Tokens comes from your query)
+
+-------------------------------------------------------------------------------------------------
+
+CORE QUESTION: How can you manually force the model into considering specific attention mechanisms?
+
+--------------------------------------------------------------------------------------------------
+
+CURRENT THINKING:
+
+Why not just directly specify WordNet embeddings? Not exactly a realistic approach, but if you can direct attention to certain reference groups
+within the dataset, you can exert greater influence on the model output. 
+
+Two leading theories on how to manually create attention mechanisms based on your prompt:
+
+    (1) Word Order
+    (2) Word Count
+
+Investigating if this is in any way accurate...
+
+--------------------------------------------------------------------------------------------------
+
+IMPLICATIONS FOR WRITING GOOD PROMPTS:
+
+  >> ...
