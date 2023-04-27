@@ -43,11 +43,7 @@ Two leading theories on how to manually create attention mechanisms based on you
     (1) Word Order
     (2) Word Count
 
-Investigating if this is in any way accurate...
-
-[UPDATE]
-
-Initial test results indicate word count does not impact the image. See test:
+However, initial test results indicate neither word order or word count impacts the image. See test: [Further testing needed]
 
         Prompt #1: canopy:: deep in a forest there is a broken down cart in the foreground and in the background there is a small cozy looking village:: 
         looking for group comic dungeons and dragons fantasy theme with intricate details warm color palette --version 5 --quality 1 --chaos 1 
@@ -60,6 +56,12 @@ Initial test results indicate word count does not impact the image. See test:
         intricate details warm color palette --version 5 --quality 1 --chaos 1 --seed 145425
         
         Output: https://shorturl.at/APT36
+        
+        Prompt #3: deep in a forest there is a broken down cart in the foreground and in the background there is a small cozy looking village:: 
+        canopy:: looking for group comic dungeons and dragons fantasy theme with intricate details warm color palette --version 5 --quality 1 
+        --chaos 1 --seed 145425
+        
+        Output: https://shorturl.at/gMOV6
 
 --------------------------------------------------------------------------------------------------
 
