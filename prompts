@@ -1,0 +1,14 @@
+On the usage of the Usage of the :: seperator
+
+    Using :: asks the model to consider the two prompts separately. It will then try to fuse those elements together into a single image. The best
+    way I have found to use it is to separate your style basket from your image description
+    
+    For example:
+     
+        Deep in the forest there is a wagon with a village far off in the distance::Comic book style, dungeons and dragons theme, hatched lines
+        
+   
+   >> I have found it is not effective to try to separate the image description by :: as you lose the ability to specify many potential relationships
+      of the objects by doing this (i.e., spatial)
+
+  More the come...
