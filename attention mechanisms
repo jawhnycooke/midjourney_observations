@@ -1,3 +1,5 @@
+
+
 RELEVANT BACKGROUND:
 
 When you input a query to Midjourney, it goes through a Transformer which matches that query to a series of word 'embeddings' developed from WordNet;
