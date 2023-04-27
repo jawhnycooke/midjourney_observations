@@ -1,0 +1,50 @@
+
+RELEVANT BACKGROUND:
+
+Diffusion models don't work by copying images directly - rather, they identify features of the image associated
+with the selected class label. These features can be explicit, such as a word or watermark, or they can be very 
+subtle, such as a repetition of the texture pattern. Understanding what types of features the Midjourney backend
+is evaluating can help you select better reference images and design better prompts. One particular features of
+interest is the spatial placement of the subject (i.e., foreground or background, right or left, etc.)
+
+-------------------------------------------------------------------------------------------------
+
+CORE QUESTION: Does midjourney understand when you specify the foreground and background subjects?
+
+--------------------------------------------------------------------------------------------------
+
+SUMMARY ANSWER:
+
+No it does not appear it does. Test results indicate describing which subject should go in the foreground
+vs. which subject goes in the background do not appear to effectively place the subject in the image.
+
+Example:
+
+  First prompt: illustration in the style of looking for group comic: : dungeons and dragons fantasy theme with intricate details: : 
+  subject in the foreground is playful elf warlock with bunny rabbit to its right: : subject in the background is a large castle overlooking 
+  a seaside village in the distance: : warm color palette --version 5 --quality 1 --chaos 15
+  
+  Output: https://shorturl.at/uyBLW
+  
+  Second prompt: 
+  
+  First prompt: illustration in the style of looking for group comic: : dungeons and dragons fantasy theme with intricate details: : 
+  subject in the background is playful elf warlock with bunny rabbit to its right: : subject in the foreground is a large castle overlooking 
+  a seaside village in the distance: : warm color palette --version 5 --quality 1 --chaos 15
+  
+  Output: https://shorturl.at/hsD57
+
+As seen from these image outputs, changing the prompt to specify which subject is in the foreground or background does not appear to have
+any impact on the actual placement within the image. My working theory is that this is because the model does not effectively distinguish
+the term foreground vs. background, as this is unlikely to be in the labeled image's description. As such, a more effective means of
+achieving this would be to provide reference images that are spatially similar to your desired output - i.e., if you wish to have a 
+character in the foreground and a city in the background, provide similar spatially-composed images to achieve the desired output
+rather than attempting to do this via prompt. 
+
+--------------------------------------------------------------------------------------------------
+
+IMPLICATIONS FOR WRITING GOOD PROMPTS:
+
+  >> The model does not understand the terms "foreground" and "background" very well; consider providing reference images with specific
+  subjects in the foreground and background to achieve this goal, rather than specifying it via text. 
+  
