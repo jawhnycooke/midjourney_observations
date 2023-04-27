@@ -17,7 +17,7 @@ Breaking it down:
     (1) Your query gets broken down into piece parts called tokens
     (2) Tokens are mapped to WordNet (always WordNet)
        
-       >>It's not really a taxonomy...  think more like cluster groupings, though its more contextually routed than that. Lots of manual mapping of
+       >>It's not really a taxonomy...  think more like cluster groupings, though its more contextually rooted than that. Lots of manual mapping of
           word types, meanings, similarties
 
     (3) WordNet embeddings are mapped to images based on LAION (https://laion.ai/blog/laion-5b/)
