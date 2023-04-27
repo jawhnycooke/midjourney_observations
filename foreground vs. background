@@ -13,9 +13,9 @@ CORE QUESTION: Does midjourney understand when you specify the foreground and ba
 
 --------------------------------------------------------------------------------------------------
 
-SUMMARY ANSWER:
+CURRENT THINKING:
 
-No it does not appear it does. Test results indicate describing which subject should go in the foreground
+It doesn't appear so... see below test result indicating which subject should go in the foreground [Further testing needed]
 vs. which subject goes in the background do not appear to effectively place the subject in the image.
 
 Example:
