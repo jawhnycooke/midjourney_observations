@@ -1,0 +1,24 @@
+
+
+RELEVANT BACKGROUND:
+
+Diffusion models don't work by copying images directly - rather, they identify features of the image associated
+with the selected class label. These features can be explicit, such as a word or watermark, or they can be very 
+subtle, such as a repetition of the texture pattern. Understanding what types of features the Midjourney backend
+is evaluating can help you select better reference images and design better prompts.
+
+I have found that it is difficult to get Midjourney to produce good interiors (i.e., inside a building). My 
+working hypothesis is that this is due to many reference images being png (i.e., no background), outside (as
+many public shots are taken in exterior locations), and a variety of other reasons I'm not entirely sure about.
+
+-------------------------------------------------------------------------------------------------
+
+CORE QUESTION: What terms guide Midjourney to creating better interior images?
+
+--------------------------------------------------------------------------------------------------
+
+CURRENT THINKING:
+
+Potential style basket terms:
+
+  Interior, underground, room, inside
